@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- style for img upload & Preview -->
+    <link rel="stylesheet" href="./components/styleForImg.css">
+    <link rel="shortcut icon" href="img/SSsiteIcon.png" type="image/x-icon">
+    <title> Category | Student Square </title>
+
+    <!-- Fontawesome  -->
+    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .btnCatagory_b {
+            background: #05050559;
+            -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(10px);
+            border: 2px solid #ffffff1a;
+            box-shadow: 0 0 80px #00000033;
+            overflow: hidden;
+            color: #fff !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="allbody">
+        <!-- Body Heade Section  -->
+        <div class="head">
+            <!-- Logo Section  -->
+            <div class="logo">
+                <img src="./img/SS Landscape Logo.png" alt="" srcset="">
+            </div>
+            <!-- Log Out Section  -->
+            <div class="logInSection">
+                <button id="btnAdmin">Admin's Name</button>
+            </div>
+        </div>
+
+        <!-- Body Container Section  -->
+        <div class="container_s">
+            <!-- Head log-InSection -->
+            <nav class="dropDownSection">
+                <a href="#">
+                    <label for=""><i class="fa fa-circle-arrow-right"></i></label>
+                    <span>Go To Main Site</span>
+                </a>
+                <a href="#">
+                    <label for=""><i class="fa-solid fa-gear"></i></label>
+                    <span>Setting</span>
+                </a>
+                <a href="#">
+                    <label for=""><i class="fa-solid fa-arrow-right-from-bracket"></i></label>
+                    <span>Log Out</span>
+                </a>
+            </nav>
+
+
+            <!-- Main Container Section  -->
+            <div class="mainContainer">
+                <!-- Nav Menu Section  -->
+                <div class="navBarSection">
+                    <div class="navMenu">
+                        <!-- Blog Menu  -->
+                        <a href="index.html" class="singleMenu dashboard btnDashboard">Dashboard</a>
+                        <nav class="multipleMenu blog">
+                            <button>Blog</button>
+                            <nav class="manuExpand">
+                                <a href="b_add.html" class="singleMenu">Add</a>
+                                <a href="b_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="b_catagory.html" class="singleMenu btnCatagory_b">Category</a>
+                            </nav>
+                        </nav>
+                        <!-- Magazine Menu  -->
+                        <nav class="multipleMenu magazine">
+                            <button>Magazine</button>
+                            <nav class="manuExpand">
+                                <a href="m_add.html" class="singleMenu">Add</a>
+                                <a href="m_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="m_catagory.html" class="singleMenu btnCatagory_m">Category</a>
+                            </nav>
+                        </nav>
+                        <!-- Inspiring Menu  -->
+                        <nav class="multipleMenu inspiring">
+                            <button>Inspiring</button>
+                            <nav class="manuExpand">
+                                <a href="i_add.html" class="singleMenu">Add</a>
+                                <a href="i_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="i_catagory.html" class="singleMenu btnCatagory_i">Category</a>
+                            </nav>
+                        </nav>
+                        <!-- Counselling Menu  -->
+                        <nav class="multipleMenu counselling">
+                            <button>Counselling</button>
+                            <nav class="manuExpand">
+                                <a href="c_add.html" class="singleMenu">Add</a>
+                                <a href="c_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="c_catagory.html" class="singleMenu btnCatagory_c">Category</a>
+                            </nav>
+                        </nav>
+                        <!-- Footer News Menu  -->
+                        <nav class="multipleMenu news">
+                            <button>News</button>
+                            <nav class="manuExpand">
+                                <a href="n_add.html" class="singleMenu">Add</a>
+                                <a href="n_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="n_catagory.html" class="singleMenu btnCatagory_n">Category</a>
+                            </nav>
+                        </nav>
+                    </div>
+
+                    <div class="menuIcon2">
+                        <div class="tapClose">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Section  -->
+                <div class="contentSection">
+                    <div class="tapOpen">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="c_bodyTwo">
+                        <h1>Categories</h1>
+                        <table class="table table-striped tbl_catagory">
+                            <thead>
+                                <tr>
+                                    <th scope="col">SL#</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Popular</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularNo">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusInActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularNo">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusInActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularNo">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusInActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularNo">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusInActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl">1</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_popularNo">Yes</span>
+                                    </td>
+                                    <td>
+                                        <span class="tbl_statusInActive">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="c_body">
+                        <!-- Category Name  -->
+                        <h1>Category Add</h1>
+                        <nav class="c_name_input">
+                            <label for="catagoryName">Category Name:</label>
+                            <input type="text" name="catagoryName" id="c_name">
+                        </nav>
+                        <!-- Popular Radion BTN  -->
+                        <nav class="popular">
+                            <!-- Popular Lable  -->
+                            <label for="popular_input">Popular:</label>
+                            <!-- Radion No  -->
+                            <nav class="btnRadio">
+                                <nav class="radioNo">
+                                    <input type="radio" name="btnRadioNo" id="btnRadio">
+                                    <label for="btnRadioYes">No</label>
+                                </nav>
+                                <!-- Radion Yes  -->
+                                <nav class="radioYes">
+                                    <input type="radio" name="btnRadioYes" id="btnRadio">
+                                    <label for="btnRadioYes">Yes</label>
+                                </nav>
+                            </nav>
+                        </nav>
+
+                        <!-- Status Active/Inactive  -->
+                        <div class="statusSection">
+                            <span>Status:</span>
+                            <nav class="a_inA_radio">
+                                <nav class="s_activeRadio">
+                                    <input type="radio" name="radioActive" id="radioActive">
+                                    <label for="radioActive">Active</label>
+                                </nav>
+                                <nav class="s_inActiveRadio">
+                                    <input type="radio" name="radioInActive" id="radioInActive">
+                                    <label for="radioInActive">Inactive</label>
+                                </nav>
+                            </nav>
+                        </div>
+                        <!-- Image  -->
+                        <nav class="c_image">
+                            <h2>Image</h2>
+
+                            <!-- Upload  -->
+                            <nav id="file-upload-form" class="uploader">
+                                <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+                                <label for="file-upload" id="file-drag">
+                                    <img id="file-image" src="#" alt="Preview" class="hidden">
+                                    <div id="start">
+                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                        <div>Select a file or drag here</div>
+                                        <div id="notimage" class="hidden">Please select an image</div>
+                                        <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                                    </div>
+                                    <div id="response" class="hidden">
+                                        <div id="messages"></div>
+                                        <progress class="progress" id="file-progress" value="0">
+                                            <span>0</span>%
+                                        </progress>
+                                    </div>
+                                </label>
+                            </nav>
+                        </nav>
+
+                        <button type="submit" class="createButton">Create</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- BootStarp  -->
+    <script src="js/main.js"></script>
+    <script src="js/jsForImg.js"></script>
+</body>
+
+</html>

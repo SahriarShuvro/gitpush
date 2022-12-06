@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/SSsiteIcon.png" type="image/x-icon">
+    <title>Student Square | Admin</title>
+
+    <!-- Fontawesome  -->
+    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        .btnBrowseAll {
+            background: #05050559;
+            -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(10px);
+            border: 2px solid #ffffff1a;
+            box-shadow: 0 0 80px #00000033;
+            overflow: hidden;
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="allbody">
+        <!-- Body Heade Section  -->
+        <div class="head">
+            <!-- Logo Section  -->
+            <div class="logo">
+                <img src="./img/SS Landscape Logo.png" alt="" srcset="">
+            </div>
+            <!-- Log Out Section  -->
+            <div class="logInSection">
+                <button id="btnAdmin">Admin's Name</button>
+            </div>
+        </div>
+
+        <!-- Body Container Section  -->
+        <div class="container_s">
+            <!-- Head log-InSection -->
+            <nav class="dropDownSection">
+                <a href="#">
+                    <label for=""><i class="fa fa-circle-arrow-right"></i></label>
+                    <span>Go To Main Site</span>
+                </a>
+                <a href="#">
+                    <label for=""><i class="fa-solid fa-gear"></i></label>
+                    <span>Setting</span>
+                </a>
+                <a href="#">
+                    <label for=""><i class="fa-solid fa-arrow-right-from-bracket"></i></label>
+                    <span>Log Out</span>
+                </a>
+            </nav>
+
+
+            <!-- Main Container Section  -->
+            <div class="mainContainer">
+                <!-- Nav Menu Section  -->
+                <div class="navBarSection">
+                    <div class="navMenu">
+                        <!-- Blog Menu  -->
+                        <a href="index.html" class="singleMenu dashboard">Dashboard</a>
+                        <nav class="multipleMenu blog">
+                            <button>Blog</button>
+                            <nav class="manuExpand">
+                                <a href="b_add.html" class="singleMenu">Add</a>
+                                <a href="b_browseAll.html" class="singleMenu btnBrowseAll">Browse All</a>
+                                <a href="b_catagory.html" class="singleMenu">Catagory</a>
+                            </nav>
+                        </nav>
+                        <!-- Magazine Menu  -->
+                        <nav class="multipleMenu magazine">
+                            <button>Magazine</button>
+                            <nav class="manuExpand">
+                                <a href="m_add.html" class="singleMenu">Add</a>
+                                <a href="m_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="m_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                        <!-- Inspiring Menu  -->
+                        <nav class="multipleMenu inspiring">
+                            <button>Inspiring</button>
+                            <nav class="manuExpand">
+                                <a href="i_add.html" class="singleMenu">Add</a>
+                                <a href="i_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="i_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                        <!-- Counselling Menu  -->
+                        <nav class="multipleMenu counselling">
+                            <button>Counselling</button>
+                            <nav class="manuExpand">
+                                <a href="c_add.html" class="singleMenu">Add</a>
+                                <a href="c_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="c_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                        <!-- Footer News Menu  -->
+                        <nav class="multipleMenu news">
+                            <button>News</button>
+                            <nav class="manuExpand">
+                                <a href="n_add.html" class="singleMenu">Add</a>
+                                <a href="n_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="n_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                    </div>
+
+                    <div class="menuIcon2">
+                        <div class="tapClose">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Content Section  -->
+                <div class="contentSection">
+                    <div class="tapOpen">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="c_body c_bodyBrowseAll">
+                        <h1>
+                            Coming Soon...
+                        </h1>
+                        <table class="table table-striped tbl_catagory tbl_catagory_browseAll">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Added Date</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Breaking</th>
+                                    <th scope="col">View Count</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularNo">No</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusInActive">Inactive</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularNo">No</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusInActive">Inactive</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularNo">No</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusInActive">Inactive</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularNo">No</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusInActive">Inactive</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularYes">Yes</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusActive">Active</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="tbl_sl table_date">5 Dec 22, <br>11:14 PM</th>
+                                    <td class="tbl_img">
+                                        <img src="./img/blog.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="tbl_name">Blog</span>
+                                    </td>
+                                    <td class="thl_tit">
+                                        <span class="tbl_name">Lorem ipsum dolor sit amet...</span>
+                                    </td>
+                                    <td class="tbl_dis">
+                                        <span class="tbl_name">Lorem, ipsum dolor sit amet consectetur adipisicing elit....</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_name">N/A</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_popularNo">No</span>
+                                    </td>
+                                    <th scope="row" class="tbl_sl last_col_wid">100</th>
+                                    <td class="last_col_wid">
+                                        <span class="tbl_statusInActive">Inactive</span>
+                                    </td>
+                                    <td class="last_col_wid">
+                                        <a href="#">
+                                            <i class="fa-regular fa-pen-to-square tbl_icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
